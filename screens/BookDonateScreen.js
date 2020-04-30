@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Text, FlatList,TouchableOpacity } from 'react-native';
+import { View, StyleSheet, Text, FlatList,TouchableOpacity,Image } from 'react-native';
 import { ListItem } from 'react-native-elements'
 import firebase from 'firebase';
 import db from '../config'
@@ -42,6 +42,12 @@ export default class BookDonateScreen extends Component{
         title={item.book_name}
         subtitle={item.reason_to_request}
         titleStyle={{ color: 'black', fontWeight: 'bold' }}
+        leftElement ={<Image
+          style={{height:50,width:50}}
+           source={{
+          uri: item.image_link,
+          }}
+        />}
         rightElement={
             <TouchableOpacity style={styles.button}
               onPress ={()=>{
