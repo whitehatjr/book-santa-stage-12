@@ -22,7 +22,7 @@
     "react-native-gesture-handler": "~1.6.0",
     "react-native-google-books": "^1.0.4",
     "react-native-image-picker": "^2.3.1",
-    "react-native-reanimated": "~1.9.0",
+    "react-native-reanimated": "~2.10.0",
     "react-native-safe-area-context": "~3.0.7",
     "react-native-screens": "~2.9.0",
     "react-native-swipe-list-view": "^3.2.5",
